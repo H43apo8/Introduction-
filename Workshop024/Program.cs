@@ -73,3 +73,9 @@ PrintArray(array);
 
 int[]result = ReverseArray(array);
 PrintArray(result);
+
+
+//ВСТРОЕННАЯ ФУНКЦИЯ
+
+Array.Reverse(result);
+PrintArray(result);
