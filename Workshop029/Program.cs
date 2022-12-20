@@ -7,11 +7,11 @@ int GetNumber(string message)
 {
     int result = 0;
 
-    while(true)
+    while (true)
     {
         Console.WriteLine(message);
 
-        if(int.TryParse(Console.ReadLine(), out result))
+        if (int.TryParse(Console.ReadLine(), out result))
         {
             break;
         }
@@ -32,9 +32,9 @@ int[,] InitMatrix(int rows, int columns)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i,j] = rnd.Next(1, 10);
+            matrix[i, j] = rnd.Next(1, 10);
         }
-    } 
+    }
     return matrix;
 }
 
@@ -44,7 +44,7 @@ void PrintMatrix(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write($"{matrix[i,j]} ");
+            Console.Write($"{matrix[i, j]} ");
         }
         Console.WriteLine();
     }
